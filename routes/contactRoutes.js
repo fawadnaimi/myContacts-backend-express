@@ -9,6 +9,6 @@ const {
 } = require("../controllers/contactController");
 
 router.route("/").get(getContacts).post(addContact);
-router.route("/:id ").put(updateContact).get(getContact).delete(deleteContact);
+router.route("/:id ").get(getContact).put(updateContact).delete(deleteContact);
 
 module.exports = router;
